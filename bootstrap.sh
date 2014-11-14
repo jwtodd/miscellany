@@ -40,4 +40,4 @@ vagrant plugin install vagrant-hosts
 vagrant plugin install vagrant-cachier
 vagrant plugin install vagrant-aws
 
-( mkdir -p ~/projects; cd ~/projects; git clone https://github.com/everpeace/vagrant-mesos.git)
+( mkdir -p ~/projects; cd ~/projects; git clone https://github.com/everpeace/vagrant-mesos.git )
