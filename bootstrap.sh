@@ -20,6 +20,7 @@ brew install ruby
 brew install python
 brew install scala
 brew install go
+brew cask install java
 brew install docker
 brew install hadoop
 brew install hbase
