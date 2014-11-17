@@ -5,7 +5,7 @@
 ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
 
 brew doctor
-brew update
+brew update && brew upgrade
 
 brew install brew-cask
 brew cask upgrade
@@ -18,8 +18,9 @@ brew install git
 brew install git-flow-avh
 brew install ruby
 brew install python
-brew install docker
 brew install scala
+brew install go
+brew install docker
 brew install hadoop
 brew install hbase
 brew install zookeeper
