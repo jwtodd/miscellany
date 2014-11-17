@@ -1,13 +1,19 @@
 export JAVA_HOME=`/usr/libexec/java_home`
+export SCALA_HOME=$HOME/projects/scala
 export MAVEN_HOME=/usr/share/maven
-#export HOMEBREW_GITHUB_API_TOKEN=aaad9ce3d524c670ec4fb2d105c7aac132638a75
-#export SBT_OPTS="-XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256M"
+export HOMEBREW_GITHUB_API_TOKEN=aaad9ce3d524c670ec4fb2d105c7aac132638a75
+export SBT_OPTS="-XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256M"
 export FLAGS_GETOPT_CMD="$(brew --prefix gnu-getopt)/bin/getopt"
-#export CHEF_HOME=/opt/chef
+export CHEF_HOME=/opt/chef
+export RUBY_HOME=/usr/local/opt/ruby/bin
+export RBENV_ROOT=/usr/local/var/rbenv
+export CHEF_DK_HOME=/opt/chefdk
+export MAVEN_OPTS="-Xmx3000m"
+export SPARK_HOME=$HOME/projects/spark
+export HADOOP_HOME=$HOME/projects/hadoop
 export GO_PATH=/usr/local/opt/go
 
-#export PATH=$JAVA_HOME/bin:$MAVEN_HOME/bin:$CHEF_HOME/embedded/bin:/Users/jtodd1/tools/sbt/bin:$PATH
-export PATH=$JAVA_HOME/bin:$MAVEN_HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=~/bin:$SPARK_HOME/bin:$SPARK_HOME/sbin:$SCALA_HOME/bin:$JAVA_HOME/bin:$MAVEN_HOME/bin:$HADOOP_HOME/bin:/usr/local/bin:/usr/bin:/Users/jtodd1/tools/sbt/bin:$RUBY_HOME:$PATH
 
 bp=`brew --prefix`
 bcp="$bp/etc/bash_completion.d"
