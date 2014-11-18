@@ -31,11 +31,12 @@ brew install hadoop
 brew install hbase
 brew install zookeeper
 brew install mysql
+brew cask install pycharm
+brew cask install intellij-idea
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install vagrant-manager
 brew cask install chefdk
-brew cask install pycharm
 
 brew linkapps
 
