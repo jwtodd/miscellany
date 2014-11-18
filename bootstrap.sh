@@ -8,7 +8,7 @@ brew doctor
 brew update && brew upgrade
 
 brew install brew-cask
-brew cask upgrade
+brew cask update
 
 brew install maven
 brew install ant
