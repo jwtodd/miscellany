@@ -36,6 +36,8 @@ brew cask install virtualbox
 brew cask install vagrant-manager
 brew cask install chefdk
 
+brew linkapps
+
 vagrant plugin install vagrant-omnibus
 vagrant plugin install vagrant-berkshelf
 vagrant plugin install vagrant-hosts
