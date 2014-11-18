@@ -10,12 +10,17 @@ brew update && brew upgrade
 brew install brew-cask
 brew cask update
 
+brew install autoconf
+brew install gnu-getopt
+brew install openssl
+brew install rpm
+brew install wget
+brew install git
+brew install git-flow-avh
 brew install maven
 brew install ant
 brew install sbt
 grew install gradle
-brew install git
-brew install git-flow-avh
 brew install ruby
 brew install python
 brew install scala
@@ -25,16 +30,12 @@ brew install docker
 brew install hadoop
 brew install hbase
 brew install zookeeper
-brew install autoconf
 brew install mysql
-brew install gnu-getopt
-brew install openssl
-brew install rpm
-brew install wget
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install vagrant-manager
 brew cask install chefdk
+brew cask install pycharm
 
 brew linkapps
 
