@@ -50,3 +50,6 @@ vagrant plugin install vagrant-aws
 
 ( mkdir -p ~/projects; cd ~/projects; git clone https://github.com/everpeace/vagrant-mesos.git )
 ( mkdir -p ~/projects; cd ~/projects; git clone https://github.com/vangj/vagrant-hadoop-2.4.1-spark-1.0.1 )
+
+#go get code.google.com/p/go.tools/cmd/godoc
+#gem install fpm
