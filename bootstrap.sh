@@ -31,8 +31,8 @@ brew install hadoop
 brew install hbase
 brew install zookeeper
 brew install mysql
-brew cask install pycharm
-brew cask install intellij-idea
+brew cask install pycharm-ce
+brew cask install intellij-idea-ce
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install vagrant-manager
