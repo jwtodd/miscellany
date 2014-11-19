@@ -26,6 +26,7 @@ brew install python
 brew install scala
 brew install go
 brew cask install java
+brew cask install caskroom/versions/java7
 brew install docker
 brew install hadoop
 brew install hbase
