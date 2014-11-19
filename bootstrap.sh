@@ -25,6 +25,7 @@ brew install ruby
 brew install python
 brew install scala
 brew install go
+brew insall mercurial
 brew cask install java
 brew cask install caskroom/versions/java7
 brew install docker
