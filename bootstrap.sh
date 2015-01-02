@@ -30,6 +30,7 @@ brew cask install java
 brew cask install caskroom/versions/java7
 brew install docker
 brew install hadoop
+brew install apache-spark
 brew install hbase
 brew install zookeeper
 brew install mysql
