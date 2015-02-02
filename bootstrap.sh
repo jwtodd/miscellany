@@ -45,6 +45,7 @@ brew cask install chefdk
 brew linkapps
 
 vagrant plugin install vagrant-omnibus
+vagrant plugin install vagrant-ohai
 vagrant plugin install vagrant-berkshelf
 vagrant plugin install vagrant-hosts
 vagrant plugin install vagrant-cachier
