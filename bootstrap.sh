@@ -37,6 +37,7 @@ brew install mysql
 brew install titan-server
 brew cask install pycharm-ce
 brew cask install intellij-idea-ce
+brew cask install visualvm
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install vagrant-manager
