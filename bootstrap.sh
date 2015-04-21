@@ -4,11 +4,11 @@
 
 ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
 
-brew doctor
-brew update && brew upgrade
 
 brew install brew-cask
-brew cask update
+brew install caskroom/cask/brew-cask
+brew doctor
+brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup && brew cask update
 
 brew install autoconf
 brew install gnu-getopt
@@ -42,6 +42,7 @@ brew cask install vagrant
 brew cask install virtualbox
 brew cask install vagrant-manager
 brew cask install chefdk
+brew cask install google-chrome
 
 brew linkapps
 
@@ -56,4 +57,15 @@ vagrant plugin install vagrant-aws
 ( mkdir -p ~/projects; cd ~/projects; git clone https://github.com/vangj/vagrant-hadoop-2.4.1-spark-1.0.1 )
 
 #go get code.google.com/p/go.tools/cmd/godoc
-#gem install fpm
+
+gem install fpm
+
+sudo pip install scalr
+
+sudo pip install thefuck
+sudo pip install thefuck --upgrade
+
+cat << EOF >> ~/.bash_profile
+alias fuck='\$(thefuck \$(fc -ln -1))'
+alias FUCK='fuck'
+EOF
