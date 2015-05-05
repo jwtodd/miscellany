@@ -29,6 +29,7 @@ brew insall mercurial
 brew cask install java
 brew cask install caskroom/versions/java7
 brew install docker
+brew install boot2docker
 brew install hadoop
 brew install apache-spark
 brew install hbase
