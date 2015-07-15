@@ -36,6 +36,9 @@ brew install hbase
 brew install zookeeper
 brew install mysql
 brew install titan-server
+brew install node
+brew install npm
+brew install redis
 brew cask install pycharm-ce
 brew cask install intellij-idea-ce
 brew cask install visualvm
