@@ -4,19 +4,25 @@
 
 ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
 
-
-brew install brew-cask
-brew install caskroom/cask/brew-cask
 brew doctor
-brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup && brew cask update
+brew update && brew upgrade
+
+
+brew tap caskroom/cask
+brew install brew-cask
+
+brew update && brew cask update && brew upgrade brew-cask && brew cleanup && brew cask cleanup
 
 brew install autoconf
+brew install automake
+brew install libtool
 brew install gnu-getopt
 brew install openssl
 brew install rpm
 brew install wget
 brew install git
 brew install git-flow-avh
+brew install subversion
 brew install maven
 brew install ant
 brew install sbt
@@ -29,16 +35,12 @@ brew insall mercurial
 brew cask install java
 brew cask install caskroom/versions/java7
 brew install docker
-brew install boot2docker
 brew install hadoop
 brew install apache-spark
 brew install hbase
 brew install zookeeper
 brew install mysql
 brew install titan-server
-brew install node
-brew install npm
-brew install redis
 brew cask install pycharm-ce
 brew cask install intellij-idea-ce
 brew cask install visualvm
@@ -70,6 +72,6 @@ sudo pip install thefuck
 sudo pip install thefuck --upgrade
 
 cat << EOF >> ~/.bash_profile
-alias fuck='\$(thefuck \$(fc -ln -1))'
+alias fuck='$(thefuck $(fc -ln -1))'
 alias FUCK='fuck'
 EOF
