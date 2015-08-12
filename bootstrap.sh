@@ -11,7 +11,8 @@ brew update && brew upgrade
 brew tap caskroom/cask
 brew install brew-cask
 
-brew update && brew cask update && brew upgrade brew-cask && brew cleanup && brew cask cleanup
+#brew update && brew cask update && brew upgrade brew-cask && brew cleanup && brew cask cleanup
+brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup
 
 brew install autoconf
 brew install automake
@@ -49,6 +50,7 @@ brew cask install virtualbox
 brew cask install vagrant-manager
 brew cask install chefdk
 brew cask install google-chrome
+brew install ansible
 
 brew linkapps
 
