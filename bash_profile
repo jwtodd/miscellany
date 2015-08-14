@@ -21,3 +21,6 @@ bcp="$bp/etc/bash_completion.d"
 for f in `ls $bcp`; do
   . $bcp/$f
 done
+
+alias fuck='$(thefuck $(fc -ln -1))'
+alias FUCK='fuck'

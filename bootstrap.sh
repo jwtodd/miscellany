@@ -50,6 +50,7 @@ brew cask install virtualbox
 brew cask install vagrant-manager
 brew cask install chefdk
 brew cask install google-chrome
+brew cask install dockertoolbox
 brew install ansible
 
 brew linkapps
