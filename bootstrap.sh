@@ -50,6 +50,7 @@ brew cask install vagrant
 brew cask install virtualbox
 brew cask install vagrant-manager
 brew cask install otto
+brew cask install nomad
 brew install packer
 brew cask install serf
 brew install consul
