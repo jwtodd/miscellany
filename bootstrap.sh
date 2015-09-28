@@ -48,6 +48,11 @@ brew cask install visualvm
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install vagrant-manager
+brew install packer
+brew cask install serf
+brew install consul
+brew install terraform
+brew cask install vault
 brew cask install chefdk
 brew cask install google-chrome
 brew cask install dockertoolbox
