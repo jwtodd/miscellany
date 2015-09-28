@@ -44,10 +44,12 @@ brew install mysql
 brew install titan-server
 brew cask install pycharm-ce
 brew cask install intellij-idea-ce
+# ?brew install atlas?
 brew cask install visualvm
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install vagrant-manager
+brew cask install otto
 brew install packer
 brew cask install serf
 brew install consul
