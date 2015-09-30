@@ -26,8 +26,7 @@ hadoop_formulas=('hadoop' 'hbase' 'zookeeper')
 spark_formulas=('apache-spark')
 rdbms_formulas=('mysql')
 graph_formulas=('titan-server')
-# todo: rubymine
-ide_casks=('pycharm-ce' 'intellij-idea-ce' 'visualvm')
+ide_casks=('pycharm-ce' 'intellij-idea-ce' 'visualvm' 'rubymine')
 devops_formulas=('packer' 'consul' 'terraform' 'ansible' 'saltstack')
 # todo: hashi:atlas
 devops_casks=('vagrant' 'otto' 'nomad' 'serf' 'vault' 'vagrant-manager' 'chefdk')
