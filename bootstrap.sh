@@ -1,74 +1,59 @@
 #!/bin/sh
 
-# todo: add: [ install | upgrade ] option
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
+beers="\xF0\x9F\x8D\xBA\xF0\x9F\x8D\xBA\xF0\x9F\x8D\xBA"
 
-brew doctor
-brew update && brew upgrade
+#brew doctor
+#brew update && brew upgrade
+#brew tap caskroom/cask
+#brew install brew-cask
+#brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup
 
+make_formulas=('autoconf' 'automake' 'libtool' 'gnu-getopt')
+security_formulas=('openssl')
+web_formulas=('wget')
+web_casks=('google-chrome')
+package_formulas=('rpm')
+repository_formulas=('git' 'git-flow-avh' 'subversion' 'mercurial')
+build_formulas=('maven' 'ant' 'sbt' 'gradle')
+language_formulas=('ruby' 'python' 'scala' 'go')
+# todo: caskroom/versions/java7
+language_casks=('java')
+container_formulas=('docker')
+container_casks=('virtualbox' 'dockertoolbox')
+hadoop_formulas=('hadoop' 'hbase' 'zookeeper')
+spark_formulas=('apache-spark')
+rdbms_formulas=('mysql')
+graph_formulas=('titan-server')
+# todo: rubymine
+ide_casks=('pycharm-ce' 'intellij-idea-ce' 'visualvm')
+devops_formulas=('packer' 'consul' 'terraform' 'ansible' 'saltstack')
+# todo: hashi:atlas
+devops_casks=('vagrant' 'otto' 'nomad' 'serf' 'vault' 'vagrant-manager' 'chefdk')
 
-brew tap caskroom/cask
-brew install brew-cask
+for formula in ${make_formulas[@]} ${security_formulas[@]} ${web_formulas[@]} ${package_formulas[@]} ${repository_formulas[@]} ${build_formulas[@]} ${language_formulas[@]} ${container_formulas[@]} ${hadoop_formulas[@]} ${spark_formulas[@]} ${rdbms_formulas[@]} ${graph_formulas[@]} ${devops_formulas[@]}; do
+  echo "$beers : brewing formula: $formula"
+  brew install $formula; brew upgrade $formula
+  echo "$beers : brewed formula: $formula"
+done
 
-#brew update && brew cask update && brew upgrade brew-cask && brew cleanup && brew cask cleanup
-brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup
-
-brew install autoconf
-brew install automake
-brew install libtool
-brew install gnu-getopt
-brew install openssl
-brew install rpm
-brew install wget
-brew install git
-brew install git-flow-avh
-brew install subversion
-brew install maven
-brew install ant
-brew install sbt
-grew install gradle
-brew install ruby
-brew install python
-brew install scala
-brew install go
-brew insall mercurial
-brew cask install java
-brew cask install caskroom/versions/java7
-brew install docker
-brew install hadoop
-brew install apache-spark
-brew install hbase
-brew install zookeeper
-brew install mysql
-brew install titan-server
-brew cask install pycharm-ce
-brew cask install intellij-idea-ce
-# ?brew install atlas?
-brew cask install visualvm
-brew cask install vagrant
-brew cask install virtualbox
-brew cask install vagrant-manager
-brew cask install otto
-brew cask install nomad
-brew install packer
-brew cask install serf
-brew install consul
-brew install terraform
-brew cask install vault
-brew cask install chefdk
-brew cask install google-chrome
-brew cask install dockertoolbox
-brew install ansible
+for cask in ${web_casks[@]} ${language_casks[@]} ${container_casks[@]} ${ide_casks[@]} ${devops_casks[@]}; do
+  echo "$beers : brewing cask: $cask"
+  brew cask install $cask; brew cask update $cask
+  echo "$beers : brewing cask: $cask"
+done
 
 brew linkapps
+brew link --overwrite saltstack
 
-vagrant plugin install vagrant-omnibus
-vagrant plugin install vagrant-ohai
-vagrant plugin install vagrant-berkshelf
-vagrant plugin install vagrant-hosts
-vagrant plugin install vagrant-cachier
-vagrant plugin install vagrant-aws
+vagrant_plugins=('omnibus' 'ohai' 'berkshelf' 'hosts' 'cachier' 'aws')
+
+for vagrant_plugin in ${vagrant_plugins[@]}; do
+  echo "$beers : vagranting plugin: $vagrant_plugin"
+  vagrant plugin install vagrant-$vagrant_plugin; vagrant plugin upgrade vagrant-$vagrant_plugin
+  echo "$beers : vagranted plugin: $vagrant_plugin"
+done
 
 ( mkdir -p ~/projects; cd ~/projects; git clone https://github.com/everpeace/vagrant-mesos.git )
 ( mkdir -p ~/projects; cd ~/projects; git clone https://github.com/vangj/vagrant-hadoop-2.4.1-spark-1.0.1 )
