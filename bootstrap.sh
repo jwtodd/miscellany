@@ -30,6 +30,7 @@ ide_casks=('pycharm-ce' 'intellij-idea-ce' 'visualvm' 'rubymine')
 devops_formulas=('packer' 'consul' 'terraform' 'ansible' 'saltstack')
 # todo: hashi:atlas
 devops_casks=('vagrant' 'otto' 'nomad' 'serf' 'vault' 'vagrant-manager' 'chefdk')
+communications_casks=('skype')
 
 for formula in ${make_formulas[@]} ${security_formulas[@]} ${web_formulas[@]} ${package_formulas[@]} ${repository_formulas[@]} ${build_formulas[@]} ${language_formulas[@]} ${container_formulas[@]} ${hadoop_formulas[@]} ${spark_formulas[@]} ${rdbms_formulas[@]} ${graph_formulas[@]} ${devops_formulas[@]}; do
   echo "$beers : brewing formula: $formula"
@@ -37,7 +38,7 @@ for formula in ${make_formulas[@]} ${security_formulas[@]} ${web_formulas[@]} ${
   echo "$beers : brewed formula: $formula"
 done
 
-for cask in ${web_casks[@]} ${language_casks[@]} ${container_casks[@]} ${ide_casks[@]} ${devops_casks[@]}; do
+for cask in ${web_casks[@]} ${language_casks[@]} ${container_casks[@]} ${ide_casks[@]} ${devops_casks[@]} ${communications_casks[@]}; do
   echo "$beers : brewing cask: $cask"
   brew cask install $cask; brew cask update $cask
   echo "$beers : brewing cask: $cask"
