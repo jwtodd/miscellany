@@ -19,7 +19,6 @@ repository_formulas=('git' 'git-flow-avh' 'subversion' 'mercurial')
 repository_casks=('sourcetree')
 build_formulas=('maven' 'ant' 'sbt' 'gradle')
 language_formulas=('ruby' 'python' 'scala' 'go')
-# todo: caskroom/versions/java7
 language_casks=('java' 'caskroom/versions/java7')
 container_formulas=('docker' 'docker-compose' 'docker-machine' 'docker-swarm')
 container_casks=('virtualbox' 'dockertoolbox')
