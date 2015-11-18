@@ -67,7 +67,7 @@ gem install fpm
 sudo pip install thefuck
 sudo pip install thefuck --upgrade
 
-cat << EOF >> ~/.bash_profile
+cat << EOF >> ~/.bashrc
 alias fuck='$(thefuck $(fc -ln -1))'
 alias FUCK='fuck'
 EOF
