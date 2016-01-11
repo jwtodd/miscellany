@@ -30,7 +30,7 @@ spark_formulas=("apache-spark")
 rdbms_formulas=("mysql")
 graph_formulas=("titan-server")
 ide_casks=("pycharm-ce" "intellij-idea-ce" "visualvm" "rubymine" "atom")
-devops_formulas=("packer" "consul" "terraform" "ansible" "saltstack")
+devops_formulas=("packer" "consul" "terraform" "ansible" "saltstack" "nmap")
 # todo: hashi:atlas
 devops_casks=("vagrant" "otto" "nomad" "serf" "vault" "vagrant-manager" "chefdk")
 communications_casks=("skype" "limechat" "hipchat")
