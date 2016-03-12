@@ -66,6 +66,7 @@ done
 #go get code.google.com/p/go.tools/cmd/godoc
 
 gem install fpm
+gem install travis
 
 sudo pip install thefuck
 sudo pip install thefuck --upgrade
