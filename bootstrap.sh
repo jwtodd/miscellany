@@ -12,7 +12,7 @@ beers="\xF0\x9F\x8D\xBA \xF0\x9F\x8D\xBA \xF0\x9F\x8D\xBA"
 
 sh_formulas=("bash" "bash-completion")
 make_formulas=("autoconf" "automake" "libtool" "gnu-getopt")
-security_formulas=("openssl")
+security_formulas=("openssl" "gpg")
 web_formulas=("wget")
 web_casks=("google-chrome")
 aws_formulas=("awscli")
