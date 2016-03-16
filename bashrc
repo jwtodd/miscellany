@@ -11,7 +11,7 @@ export CHEF_DK_HOME=/opt/chefdk
 export MAVEN_OPTS="-Xmx3000m"
 export SPARK_HOME=$HOME/projects/spark
 export HADOOP_HOME=$HOME/projects/hadoop
-export GOPATH=/usr/local/opt/go
+export GOPATH=/usr/local/opt/go/libexec/bin
 
 export PATH=~/bin:$GOPATH/libexec/bin:$SPARK_HOME/bin:$SPARK_HOME/sbin:$SCALA_HOME/bin:$JAVA_HOME/bin:$MAVEN_HOME/bin:$HADOOP_HOME/bin:$CHEF_DK_HOME/bin:$CHEF_DK_HOME/embedded/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:~/sbt/bin:$RUBY_HOME:$PATH
 
