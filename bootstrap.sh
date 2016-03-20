@@ -11,7 +11,7 @@ beers="\xF0\x9F\x8D\xBA \xF0\x9F\x8D\xBA \xF0\x9F\x8D\xBA"
 #brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup
 
 sh_formulas=("bash" "bash-completion")
-make_formulas=("autoconf" "automake" "libtool" "gnu-getopt")
+make_formulas=("autoconf" "automake" "libtool" "gnu-getopt" "pv")
 security_formulas=("openssl" "gpg")
 web_formulas=("wget")
 web_casks=("google-chrome")
