@@ -22,8 +22,7 @@ repository_casks=("sourcetree")
 build_formulas=("maven" "ant" "sbt" "gradle")
 language_formulas=("ruby" "python" "scala" "go")
 language_casks=("java" "caskroom/versions/java7")
-container_formulas=("docker" "docker-compose" "docker-machine" "docker-swarm" "boot2docker")
-container_casks=("virtualbox" "dockertoolbox")
+container_casks=("docker" "virtualbox")
 cassandra_formulas=("cassandra")
 hadoop_formulas=("hadoop" "hbase" "zookeeper")
 spark_formulas=("apache-spark")
@@ -36,7 +35,7 @@ devops_casks=("vagrant" "otto" "nomad" "serf" "vault" "vagrant-manager" "chefdk"
 communications_casks=("skype" "limechat" "hipchat")
 miscellaneous_casks=("caffeine")
 
-for formula in "${sh_formulas[@]}" "${make_formulas[@]}" "${security_formulas[@]}" "${web_formulas[@]}" "${aws_formulaas[@]}" "${package_formulas[@]}" "${repository_formulas[@]}" "${build_formulas[@]}" "${language_formulas[@]}" "${container_formulas[@]}" "${cassandra_formulas[@]}" "${hadoop_formulas[@]}" "${spark_formulas[@]}" "${rdbms_formulas[@]}" "${graph_formulas[@]}" "${devops_formulas[@]}"; do
+for formula in "${sh_formulas[@]}" "${make_formulas[@]}" "${security_formulas[@]}" "${web_formulas[@]}" "${aws_formulaas[@]}" "${package_formulas[@]}" "${repository_formulas[@]}" "${build_formulas[@]}" "${language_formulas[@]}" "${cassandra_formulas[@]}" "${hadoop_formulas[@]}" "${spark_formulas[@]}" "${rdbms_formulas[@]}" "${graph_formulas[@]}" "${devops_formulas[@]}"; do
   echo "$beers : brewing formula: $formula"
   brew install $formula; brew upgrade $formula
   echo "$beers : brewed formula: $formula"
