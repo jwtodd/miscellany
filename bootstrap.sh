@@ -10,6 +10,7 @@ beers="\xF0\x9F\x8D\xBA \xF0\x9F\x8D\xBA \xF0\x9F\x8D\xBA"
 #brew install brew-cask
 #brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup
 
+taps=("caskroom/cask")
 sh_formulas=("bash" "bash-completion")
 make_formulas=("autoconf" "automake" "libtool" "gnu-getopt")
 security_formulas=("openssl" "gpg")
@@ -22,8 +23,8 @@ repository_casks=("sourcetree")
 build_formulas=("maven" "ant" "sbt" "gradle")
 language_formulas=("ruby" "python" "scala" "go")
 language_casks=("java" "caskroom/versions/java7")
-container_formulas=("docker" "docker-compose" "docker-machine" "docker-swarm" "boot2docker")
-container_casks=("virtualbox" "dockertoolbox")
+container_formulas=()
+container_casks=("virtualbox" "docker")
 cassandra_formulas=("cassandra")
 hadoop_formulas=("hadoop" "hbase" "zookeeper")
 spark_formulas=("apache-spark")
@@ -40,6 +41,10 @@ for formula in "${sh_formulas[@]}" "${make_formulas[@]}" "${security_formulas[@]
   echo "$beers : brewing formula: $formula"
   brew install $formula; brew upgrade $formula
   echo "$beers : brewed formula: $formula"
+done
+
+for tap in "${taps[@]}"; do
+  brew tap $tap
 done
 
 for cask in "${web_casks[@]}" "${language_casks[@]}" "${container_casks[@]}" "${ide_casks[@]}" "${devops_casks[@]}" "${repository_casks[@]}" "${communications_casks[@]}"; do
