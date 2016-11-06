@@ -19,5 +19,10 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 
+(cd /usr/local/etc/bash_completion.d; \
+  ln -s /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion; \
+  ln -s /Applications/Docker.app/Contents/Resources/etc/docker-machine.bash-completion; \
+  ln -s /Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion)
+
 alias fuck='$(thefuck $(fc -ln -1))'
 alias FUCK='fuck'
