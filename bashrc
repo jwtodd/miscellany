@@ -15,10 +15,10 @@ export GOPATH=/usr/local/opt/go/libexec/bin
 
 export PATH=~/bin:$GOPATH/libexec/bin:$SPARK_HOME/bin:$SPARK_HOME/sbin:$SCALA_HOME/bin:$JAVA_HOME/bin:$MAVEN_HOME/bin:$HADOOP_HOME/bin:$CHEF_DK_HOME/bin:$CHEF_DK_HOME/embedded/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:~/sbt/bin:$RUBY_HOME:$PATH
 
-(cd /usr/local/etc/bash_completion.d; \
-  ln -s /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion; \
-  ln -s /Applications/Docker.app/Contents/Resources/etc/docker-machine.bash-completion; \
-  ln -s /Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion)
+for f in docker.bash-completion docker-machine.bash-completion docker-compose.bash-completion; do
+  (cd /usr/local/etc/bash_completion.d; \
+    [ ! -f /Applications/Docker.app/Contents/Resources/etc/$f ] && ln /Applications/Docker.app/Contents/Resources/etc/$f)
+done
 
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
