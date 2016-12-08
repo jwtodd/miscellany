@@ -26,3 +26,6 @@ fi
 
 alias fuck='$(thefuck $(fc -ln -1))'
 alias FUCK='fuck'
+alias drc='docker rm $(docker ps -a -q)'
+alias dri='docker rmi $(docker images -q)'
+alias drv='docker volume rm `docker volume ls -q -f dangling=true`'
