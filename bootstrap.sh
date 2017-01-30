@@ -35,7 +35,7 @@ devops_formulas=("packer" "consul" "terraform" "ansible" "saltstack" "nmap")
 # todo: hashi:atlas
 devops_casks=("vagrant" "otto" "nomad" "serf" "vault" "vagrant-manager" "chefdk")
 communications_casks=("skype" "limechat" "hipchat")
-misc_formulas=("jq")
+misc_formulas=("jq" "watch")
 
 for formula in "${sh_formulas[@]}" "${make_formulas[@]}" "${security_formulas[@]}" "${web_formulas[@]}" "${aws_formulaas[@]}" "${package_formulas[@]}" "${repository_formulas[@]}" "${build_formulas[@]}" "${language_formulas[@]}" "${cassandra_formulas[@]}" "${hadoop_formulas[@]}" "${spark_formulas[@]}" "${rdbms_formulas[@]}" "${graph_formulas[@]}" "${devops_formulas[@]}" "${misc_formulas[@]}"; do
   echo "$beers : brewing formula: $formula"
