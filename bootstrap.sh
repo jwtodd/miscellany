@@ -36,7 +36,7 @@ devops_formulas=("packer" "consul" "terraform" "ansible" "saltstack" "nmap")
 devops_casks=("vagrant" "otto" "nomad" "serf" "vault" "vagrant-manager" "chefdk")
 communications_casks=("skype" "limechat" "hipchat")
 misc_formulas=("jq" "watch")
-term_casks=("coolterm" "tunnelblick")
+misc_casks=("coolterm" "tunnelblick" "tftpserver")
 
 for formula in "${sh_formulas[@]}" "${make_formulas[@]}" "${security_formulas[@]}" "${web_formulas[@]}" "${aws_formulaas[@]}" "${package_formulas[@]}" "${repository_formulas[@]}" "${build_formulas[@]}" "${language_formulas[@]}" "${cassandra_formulas[@]}" "${hadoop_formulas[@]}" "${spark_formulas[@]}" "${rdbms_formulas[@]}" "${graph_formulas[@]}" "${devops_formulas[@]}" "${misc_formulas[@]}"; do
   echo "$beers : brewing formula: $formula"
@@ -48,7 +48,7 @@ for tap in "${taps[@]}"; do
   brew tap $tap
 done
 
-for cask in "${web_casks[@]}" "${language_casks[@]}" "${container_casks[@]}" "${ide_casks[@]}" "${devops_casks[@]}" "${repository_casks[@]}" "${communications_casks[@]}" "${term_casks[@]}"; do
+for cask in "${web_casks[@]}" "${language_casks[@]}" "${container_casks[@]}" "${ide_casks[@]}" "${devops_casks[@]}" "${repository_casks[@]}" "${communications_casks[@]}" "${misc_casks[@]}"; do
   echo "$beers : brewing cask: $cask"
   brew cask install $cask; brew cask update $cask
   echo "$beers : brewing cask: $cask"
