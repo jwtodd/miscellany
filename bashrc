@@ -24,8 +24,11 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 
-alias fuck='$(thefuck $(fc -ln -1))'
-alias FUCK='fuck'
+alias tz='tar -czvf'
+alias tb='tar -cjvf'
+alias utz='tar -xzvf'
 alias drc='docker rm $(docker ps -a -q)'
 alias dri='docker rmi $(docker images -q)'
 alias drv='docker volume rm `docker volume ls -q -f dangling=true`'
+alias fuck='$(thefuck $(fc -ln -1))'
+alias FUCK='fuck'
