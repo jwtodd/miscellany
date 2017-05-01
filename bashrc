@@ -24,6 +24,10 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 
+pp() {
+  lsof -n -iTCP:${1} | grep LISTEN
+}
+
 alias tz='tar -czvf'
 alias tb='tar -cjvf'
 alias utz='tar -xzvf'
