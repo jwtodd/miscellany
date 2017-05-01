@@ -24,8 +24,12 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 
-pp() {
+portpid() {
   lsof -n -iTCP:${1} | grep LISTEN
+}
+
+pidcwd() {
+  lsof -a -d cwd -p ${1}
 }
 
 alias tz='tar -czvf'
