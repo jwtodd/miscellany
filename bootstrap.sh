@@ -38,10 +38,17 @@ communications_casks=("skype" "limechat" "hipchat")
 misc_formulas=("jq" "watch")
 misc_casks=("coolterm" "tunnelblick" "tftpserver")
 x11_casks=("xquartz")
+formulas_with_default_names("gnu-sed")
 
 for formula in "${sh_formulas[@]}" "${make_formulas[@]}" "${security_formulas[@]}" "${web_formulas[@]}" "${aws_formulaas[@]}" "${package_formulas[@]}" "${repository_formulas[@]}" "${build_formulas[@]}" "${language_formulas[@]}" "${cassandra_formulas[@]}" "${hadoop_formulas[@]}" "${spark_formulas[@]}" "${rdbms_formulas[@]}" "${graph_formulas[@]}" "${devops_formulas[@]}" "${misc_formulas[@]}"; do
   echo "$beers : brewing formula: $formula"
   brew install $formula; brew upgrade $formula
+  echo "$beers : brewed formula: $formula"
+done
+
+for formula in "${formulas_with_default_names[@]}"; do
+  echo "$beers : brewing formula: $formula"
+  brew install $formula --with-default-names; brew upgrade $formula
   echo "$beers : brewed formula: $formula"
 done
 
