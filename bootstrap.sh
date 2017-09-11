@@ -82,6 +82,7 @@ done
 
 gem install fpm
 gem install travis
+gem install iStats
 
 sudo pip install thefuck
 sudo pip install thefuck --upgrade
