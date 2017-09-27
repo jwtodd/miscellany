@@ -4,11 +4,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 beers="\xF0\x9F\x8D\xBA \xF0\x9F\x8D\xBA \xF0\x9F\x8D\xBA"
 
-#brew doctor
-#brew update && brew upgrade
-#brew tap caskroom/cask
-#brew install brew-cask
-#brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup
+brew doctor
 
 taps=("caskroom/cask" "homebrew/completions")
 sh_formulas=("bash" "bash-completion")
