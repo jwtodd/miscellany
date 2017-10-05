@@ -55,24 +55,24 @@ done
 
 for cask in "${web_casks[@]}" "${language_casks[@]}" "${container_casks[@]}" "${ide_casks[@]}" "${devops_casks[@]}" "${repository_casks[@]}" "${communications_casks[@]}" "${misc_casks[@]}" "${x11_casks[@[}"; do
   echo "$beers : brewing cask: $cask"
-  brew cask install $cask; brew cask update $cask
+  brew cask install $cask; brew cask reinstall $cask
   echo "$beers : brewing cask: $cask"
 done
 
 brew linkapps
 brew link --overwrite saltstack
 
-vagrant_plugins=('omnibus' 'ohai' 'berkshelf' 'hosts' 'cachier' 'aws')
+#vagrant_plugins=('omnibus' 'ohai' 'berkshelf' 'hosts' 'cachier' 'aws')
 
-for vagrant_plugin in "${vagrant_plugins[@]}"; do
-  echo "$beers : vagranting plugin: $vagrant_plugin"
-  vagrant plugin install vagrant-$vagrant_plugin
-  vagrant plugin update vagrant-$vagrant_plugin
-  echo "$beers : vagranted plugin: $vagrant_plugin"
-done
+#for vagrant_plugin in "${vagrant_plugins[@]}"; do
+#  echo "$beers : vagranting plugin: $vagrant_plugin"
+#  vagrant plugin install vagrant-$vagrant_plugin
+#  vagrant plugin update vagrant-$vagrant_plugin
+#  echo "$beers : vagranted plugin: $vagrant_plugin"
+#done
 
-( mkdir -p ~/projects; cd ~/projects; git clone https://github.com/everpeace/vagrant-mesos.git )
-( mkdir -p ~/projects; cd ~/projects; git clone https://github.com/vangj/vagrant-hadoop-2.4.1-spark-1.0.1 )
+#( mkdir -p ~/projects; cd ~/projects; git clone https://github.com/everpeace/vagrant-mesos.git )
+#( mkdir -p ~/projects; cd ~/projects; git clone https://github.com/vangj/vagrant-hadoop-2.4.1-spark-1.0.1 )
 
 #go get code.google.com/p/go.tools/cmd/godoc
 
