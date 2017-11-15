@@ -9,7 +9,7 @@ brew doctor
 taps=("caskroom/cask" "homebrew/completions")
 sh_formulas=("bash" "bash-completion" "tree")
 make_formulas=("autoconf" "automake" "libtool" "gnu-getopt")
-security_formulas=("openssl" "gpg")
+security_formulas=("openssl" "gpg" "sshpass")
 web_formulas=("wget")
 web_casks=("google-chrome")
 aws_formulas=("awscli")
