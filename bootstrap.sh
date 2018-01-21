@@ -35,7 +35,7 @@ misc_casks=("coolterm" "tunnelblick" "tftpserver")
 x11_casks=("xquartz")
 formulas_with_default_names("gnu-sed")
 file_casks=("ticktick" "the-unarchiver")
-command_line=("coreutils" "binutils" "inetutils" "arp-scan")
+command_line=("coreutils" "binutils" "inetutils" "arp-scan" "iproute2mac")
 
 for formula in "${sh_formulas[@]}" "${make_formulas[@]}" "${security_formulas[@]}" "${web_formulas[@]}" "${aws_formulaas[@]}" "${package_formulas[@]}" "${repository_formulas[@]}" "${build_formulas[@]}" "${language_formulas[@]}" "${cassandra_formulas[@]}" "${hadoop_formulas[@]}" "${spark_formulas[@]}" "${rdbms_formulas[@]}" "${graph_formulas[@]}" "${devops_formulas[@]}" "${misc_formulas[@]}" "${command_line[@]}"; do
   echo "$beers : brewing formula: $formula"
