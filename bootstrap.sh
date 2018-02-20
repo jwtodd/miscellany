@@ -7,7 +7,7 @@ beers="\xF0\x9F\x8D\xBA \xF0\x9F\x8D\xBA \xF0\x9F\x8D\xBA"
 brew doctor
 
 taps=("caskroom/cask" "homebrew/completions")
-sh_formulas=("bash" "bash-completion" "tree")
+sh_formulas=("bash" "bash-completion" "tree" "grep")
 make_formulas=("autoconf" "automake" "libtool" "gnu-getopt")
 security_formulas=("openssl" "gpg" "sshpass")
 web_formulas=("wget" "markdown")
