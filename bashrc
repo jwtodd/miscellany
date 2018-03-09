@@ -1,4 +1,4 @@
-export JAVA_HOME=`/usr/libexec/java_home`
+export JAVA_HOME=`/usr/libexec/java_home -v9`
 export SCALA_HOME=$HOME/projects/scala
 export MAVEN_HOME=/usr/share/maven
 export HOMEBREW_GITHUB_API_TOKEN=***masked***
