@@ -8,7 +8,7 @@ brew doctor
 
 taps=("caskroom/cask" "homebrew/completions")
 sh_formulas=("bash" "bash-completion" "tree" "grep" "telnet")
-make_formulas=("autoconf" "automake" "libtool" "gnu-getopt")
+make_formulas=("autoconf" "automake" "libtool" "gnu-getopt" "shellcheck")
 security_formulas=("openssl" "gpg" "sshpass")
 web_formulas=("wget" "markdown")
 web_casks=("google-chrome" "brave")
