@@ -6,10 +6,10 @@ beers="\xF0\x9F\x8D\xBA \xF0\x9F\x8D\xBA \xF0\x9F\x8D\xBA"
 
 brew doctor
 
-taps=("caskroom/cask" "homebrew/completions")
+taps=("caskroom/cask" "caskroom/versions")
 sh_formulas=("bash" "bash-completion" "tree" "grep" "telnet")
 make_formulas=("autoconf" "automake" "libtool" "gnu-getopt" "shellcheck")
-security_formulas=("openssl" "gpg" "sshpass")
+security_formulas=("openssl" "gpg" "https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb")
 web_formulas=("wget" "markdown")
 web_casks=("google-chrome" "brave")
 aws_formulas=("awscli")
@@ -17,8 +17,8 @@ package_formulas=("rpm")
 repository_formulas=("git" "hub" "git-flow-avh" "subversion" "mercurial")
 repository_casks=("sourcetree")
 build_formulas=("maven" "ant" "sbt" "gradle")
-language_formulas=("ruby" "python" "scala" "go")
-language_casks=("java9" "java8" "groovy" "rust")
+language_formulas=("ruby" "python" "scala" "go" "rust")
+language_casks=("java" "java9" "java8" "groovy")
 container_formulas=()
 container_casks=("virtualbox" "docker" "docker-toolbox" "docker-completion" "docker-compose-completion" "docker-machine-completion")
 cassandra_formulas=("cassandra")
@@ -27,7 +27,7 @@ spark_formulas=("apache-spark")
 rdbms_formulas=("mysql")
 graph_formulas=("titan-server")
 ide_casks=("pycharm-ce" "intellij-idea-ce" "visualvm" "rubymine" "atom")
-devops_formulas=("packer" "consul" "terraform" "otto" "nomad" "serf" "vault" "ansible" "saltstack" "nmap")
+devops_formulas=("packer" "consul" "terraform" "nomad" "serf" "vault" "ansible" "saltstack" "nmap")
 devops_casks=("vagrant" "vagrant-manager")
 communications_casks=("skype" "limechat" "hipchat")
 misc_formulas=("jq" "watch")
@@ -59,7 +59,6 @@ for cask in "${web_casks[@]}" "${language_casks[@]}" "${container_casks[@]}" "${
   echo "$beers : brewing cask: $cask"
 done
 
-brew linkapps
 brew link --overwrite saltstack
 
 #vagrant_plugins=('omnibus' 'ohai' 'berkshelf' 'hosts' 'cachier' 'aws')
