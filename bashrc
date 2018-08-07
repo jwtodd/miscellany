@@ -6,7 +6,7 @@ export FLAGS_GETOPT_CMD="$(brew --prefix gnu-getopt)/bin/getopt"
 export PATH=~/bin:${JAVA_HOME}/bin:/usr/local/bin:/usr/local/opt/inetutils/libexec/gnubin:/usr/local/sbin:/usr/bin:~/sbt/bin:${PATH}
 export MANPATH=/usr/local/opt/inetutils/libexec/gnuman:${MANPATH}
 
-if [ -f $(brew --prefix)/etc/bash_completion ]; gthen
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
