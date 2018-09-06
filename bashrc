@@ -22,8 +22,6 @@ pidcwd() {
   lsof -a -d cwd -p ${1}
 }
 
-alias drc=`docker rm $(docker ps -a -q)`
-alias dri=`docker rmi $(docker images -a -q)`
-alias drv=`docker volume prune -f`
-alias fuck=''
-alias FUCK='fuck'
+alias drc='docker rm $(docker ps -a -q)'
+alias dri='docker rmi $(docker images -a -q)'
+alias drv='docker volume prune -f'
