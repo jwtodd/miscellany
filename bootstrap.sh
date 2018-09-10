@@ -7,7 +7,7 @@ beers="\xF0\x9F\x8D\xBA \xF0\x9F\x8D\xBA \xF0\x9F\x8D\xBA"
 brew doctor
 
 taps=("caskroom/cask" "caskroom/versions")
-sh_formulas=("bash" "bash-completion" "tree" "grep" "telnet")
+sh_formulas=("bash" "bash-completion" "tree" "grep")
 make_formulas=("autoconf" "automake" "libtool" "gnu-getopt" "shellcheck")
 security_formulas=("openssl" "gpg" "https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb")
 web_formulas=("wget" "markdown")
