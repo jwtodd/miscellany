@@ -10,6 +10,10 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
+if [ -f ${HOME}/.cargo/env ]; then
+  . ${HOME}/.cargo/env
+fi
+
 [ ! -f /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion ] && \
   (cd /usr/local/etc/bash_completion.d; \
     ln /Applications/Docker.app./Contents/Resources/etc/docker.bash-completion)
