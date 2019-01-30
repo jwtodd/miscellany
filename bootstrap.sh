@@ -9,7 +9,7 @@ brew doctor
 taps=("caskroom/cask" "caskroom/versions")
 sh_formulas=("bash" "bash-completion" "tree" "grep")
 make_formulas=("autoconf" "automake" "libtool" "gnu-getopt" "shellcheck")
-security_formulas=("openssl" "gpg" "https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb")
+security_formulas=("openssl" "gpg" "https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb" "libjwt")
 web_formulas=("wget" "markdown")
 web_casks=("google-chrome" "brave" "tor-browser")
 aws_formulas=("awscli")
