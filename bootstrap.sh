@@ -10,6 +10,7 @@ taps=("caskroom/cask" "caskroom/versions")
 sh_formulas=("bash" "bash-completion" "tree" "grep")
 make_formulas=("autoconf" "automake" "libtool" "gnu-getopt" "shellcheck")
 security_formulas=("openssl" "gpg" "https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb")
+security_casks=("keybase")
 web_formulas=("wget" "markdown")
 web_casks=("google-chrome" "brave" "tor-browser")
 aws_formulas=("awscli")
@@ -56,7 +57,7 @@ for tap in "${taps[@]}"; do
   brew tap $tap
 done
 
-for cask in "${web_casks[@]}" "${language_casks[@]}" "${container_casks[@]}" "${ide_casks[@]}" "${devops_casks[@]}" "${repository_casks[@]}" "${communications_casks[@]}" "${misc_casks[@]}" "${x11_casks[@[}" "${credential_casks[@]}"; do
+for cask in "${security_casks[@]}" "${web_casks[@]}" "${language_casks[@]}" "${container_casks[@]}" "${ide_casks[@]}" "${devops_casks[@]}" "${repository_casks[@]}" "${communications_casks[@]}" "${misc_casks[@]}" "${x11_casks[@[}" "${credential_casks[@]}"; do
   echo "$beers : brewing cask: $cask"
   brew cask install $cask; brew cask reinstall $cask
   echo "$beers : brewing cask: $cask"
