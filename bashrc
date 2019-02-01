@@ -1,6 +1,4 @@
-export JAVA_HOME=/usr/local/share/java/jdk/Contents/Home
-#export JAVA_HOME=`/usr/libexec/java_home -v11`
-#export JAVA_HOME=`/usr/libexec/java_home -v1.8`
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-11.0.2.jdk/Contents/Home
 export HISTCONTROL=ignorespaceS
 export FLAGS_GETOPT_CMD="$(brew --prefix gnu-getopt)/bin/getopt"
 
@@ -9,7 +7,7 @@ export MANPATH=/usr/local/opt/inetutils/libexec/gnuman:${MANPATH}
 
 for f in $(ls /Applications/Docker.app/Contents/Resources/etc/*\.bash-completion); do
   (cd $(brew --prefix)/etc/bash_completion.d; \
-    [] || ln -sf ${f})
+    ln -sf ${f})
 done
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
