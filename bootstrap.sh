@@ -6,7 +6,7 @@ beers="\xF0\x9F\x8D\xBA \xF0\x9F\x8D\xBA \xF0\x9F\x8D\xBA"
 
 brew doctor
 
-taps=("caskroom/cask" "caskroom/versions")
+taps=("caskroom/cask" "caskroom/versions" "AdoptOpenJDK/openjdk")
 sh_formulas=("bash" "bash-completion" "tree" "grep")
 make_formulas=("autoconf" "automake" "libtool" "gnu-getopt" "shellcheck")
 security_formulas=("openssl" "gpg" "https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb" "libjwt")
@@ -19,7 +19,8 @@ repository_formulas=("git" "hub" "git-flow-avh" "git-subrepo" "subversion" "merc
 repository_casks=("sourcetree")
 build_formulas=("maven" "ant" "sbt" "gradle")
 language_formulas=("ruby" "python" "scala" "go" "rust" "groovy" "jvmtop")
-language_casks=("java" "java8")
+#language_casks=("java" "java8" )
+language_casks=("java" "adoptopenjdk" "adoptopenjdk8" "adoptopenjdk10" "adoptopenjdk11")
 #container_formulas=("docker" "docker-completion")
 container_formulas=("docker-completion")
 container_casks=("docker")
