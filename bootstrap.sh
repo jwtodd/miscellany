@@ -14,6 +14,7 @@ security_casks=("keybase")
 web_formulas=("wget" "markdown")
 web_casks=("google-chrome" "brave" "tor-browser")
 aws_formulas=("awscli")
+gcp_casks=("google-cloud-sdk")
 package_formulas=("rpm")
 repository_formulas=("git" "hub" "git-flow-avh" "git-subrepo" "subversion" "mercurial")
 repository_casks=("sourcetree")
@@ -58,7 +59,7 @@ for tap in "${taps[@]}"; do
   brew tap $tap
 done
 
-for cask in "${security_casks[@]}" "${web_casks[@]}" "${language_casks[@]}" "${container_casks[@]}" "${ide_casks[@]}" "${devops_casks[@]}" "${repository_casks[@]}" "${communications_casks[@]}" "${misc_casks[@]}" "${x11_casks[@[}" "${credential_casks[@]}"; do
+for cask in "${security_casks[@]}" "${web_casks[@]}" "${language_casks[@]}" "${container_casks[@]}" "${ide_casks[@]}" "${gcp_casks[@]}" "${devops_casks[@]}" "${repository_casks[@]}" "${communications_casks[@]}" "${misc_casks[@]}" "${x11_casks[@[}" "${credential_casks[@]}"; do
   echo "$beers : brewing cask: $cask"
   brew cask install $cask; brew cask reinstall $cask
   echo "$beers : brewing cask: $cask"
@@ -86,6 +87,7 @@ gem install iStats
 
 sudo pip install thefuck
 sudo pip install thefuck --upgrade
+sudo pip install -i https://pypi.python.org/simple  python-derrick
 
 cat << EOF >> ~/.bashrc
 alias fuck='$(thefuck $(fc -ln -1))'
