@@ -6,7 +6,7 @@ beers="\xF0\x9F\x8D\xBA \xF0\x9F\x8D\xBA \xF0\x9F\x8D\xBA"
 
 brew doctor
 
-taps=("caskroom/cask" "caskroom/versions")
+taps=("caskroom/cask" "caskroom/versions" "AdoptOpenJDK/openjdk")
 sh_formulas=("bash" "bash-completion" "tree" "grep")
 make_formulas=("autoconf" "automake" "libtool" "gnu-getopt" "shellcheck")
 security_formulas=("openssl" "gpg" "https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb" "libjwt")
@@ -14,12 +14,14 @@ security_casks=("keybase")
 web_formulas=("wget" "markdown")
 web_casks=("google-chrome" "brave" "tor-browser")
 aws_formulas=("awscli")
+gcp_casks=("google-cloud-sdk")
 package_formulas=("rpm")
 repository_formulas=("git" "hub" "git-flow-avh" "git-subrepo" "subversion" "mercurial")
 repository_casks=("sourcetree")
 build_formulas=("maven" "ant" "sbt" "gradle")
 language_formulas=("ruby" "python" "scala" "go" "rust" "groovy" "jvmtop")
-language_casks=("java" "java8")
+#language_casks=("java" "java8" )
+language_casks=("java" "adoptopenjdk" "adoptopenjdk8" "adoptopenjdk10" "adoptopenjdk11")
 #container_formulas=("docker" "docker-completion")
 container_formulas=("docker-completion")
 container_casks=("docker")
@@ -57,7 +59,7 @@ for tap in "${taps[@]}"; do
   brew tap $tap
 done
 
-for cask in "${security_casks[@]}" "${web_casks[@]}" "${language_casks[@]}" "${container_casks[@]}" "${ide_casks[@]}" "${devops_casks[@]}" "${repository_casks[@]}" "${communications_casks[@]}" "${misc_casks[@]}" "${x11_casks[@[}" "${credential_casks[@]}"; do
+for cask in "${security_casks[@]}" "${web_casks[@]}" "${language_casks[@]}" "${container_casks[@]}" "${ide_casks[@]}" "${gcp_casks[@]}" "${devops_casks[@]}" "${repository_casks[@]}" "${communications_casks[@]}" "${misc_casks[@]}" "${x11_casks[@[}" "${credential_casks[@]}"; do
   echo "$beers : brewing cask: $cask"
   brew cask install $cask; brew cask reinstall $cask
   echo "$beers : brewing cask: $cask"
@@ -85,6 +87,7 @@ gem install iStats
 
 sudo pip install thefuck
 sudo pip install thefuck --upgrade
+sudo pip install -i https://pypi.python.org/simple  python-derrick
 
 cat << EOF >> ~/.bashrc
 alias fuck='$(thefuck $(fc -ln -1))'
