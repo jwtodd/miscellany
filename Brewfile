@@ -1,5 +1,12 @@
+tap 'homebrew/bundle'
+tap 'homebrew/dupes'
+#tap 'homebrew/fuse'
+tap 'homebrew/science'
 tap 'caskroom/cask'
+tap 'caskroom/drivers'
+tap 'caskroom/fonts'
 tap "caskroom/versions'
+
 tap 'AdoptOpenJDK/openjdk'
 
 brew 'bash'
