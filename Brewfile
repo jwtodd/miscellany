@@ -1,11 +1,9 @@
 tap 'homebrew/bundle'
-tap 'homebrew/dupes'
 #tap 'homebrew/fuse'
-tap 'homebrew/science'
 tap 'caskroom/cask'
 tap 'caskroom/drivers'
 tap 'caskroom/fonts'
-tap "caskroom/versions'
+tap 'caskroom/versions'
 
 tap 'AdoptOpenJDK/openjdk'
 
@@ -35,7 +33,7 @@ cask 'brave'
 cask 'tor-browser'
 
 brew 'awscli'
-cask 'google-cloud-sdk"
+cask 'google-cloud-sdk'
 brew 'rpm'
 brew 'git'
 brew 'hub'
@@ -48,7 +46,7 @@ cask 'sourcetree'
 
 brew 'maven'
 brew 'ant'
-brew 'sbt"
+brew 'sbt'
 brew 'gradle'
 
 brew 'ruby'
@@ -77,7 +75,7 @@ brew 'mysql'
 brew 'titan-server'
 cask 'pycharm-ce'
 cask 'intellij-idea-ce'
-cask "visualvm'
+cask 'visualvm'
 cask 'rubymine'
 cask 'atom'
 brew 'packer'
