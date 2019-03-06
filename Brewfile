@@ -18,6 +18,8 @@ brew 'libtool'
 brew 'gnu-getopt'
 brew 'shellcheck'
 
+brew 'circleci'
+
 brew 'openssl'
 brew 'gpg'
 brew 'https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb'
