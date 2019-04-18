@@ -20,6 +20,7 @@ brew bundle
 #( mkdir -p ~/projects; cd ~/projects; git clone https://github.com/vangj/vagrant-hadoop-2.4.1-spark-1.0.1 )
 
 #go get code.google.com/p/go.tools/cmd/godoc
+go get -u sigs.k8s.io/kind
 
 gem install fpm
 gem install travis
