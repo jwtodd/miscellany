@@ -19,6 +19,7 @@ brew 'gnu-getopt'
 brew 'shellcheck'
 
 brew 'circleci'
+brew 'npm'
 
 brew 'openssl'
 brew 'gpg'
