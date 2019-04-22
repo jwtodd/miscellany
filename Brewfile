@@ -4,6 +4,7 @@ tap 'caskroom/cask'
 tap 'caskroom/drivers'
 tap 'caskroom/fonts'
 tap 'caskroom/versions'
+tap 'brew tap jenkins-x/jx'
 
 tap 'AdoptOpenJDK/openjdk'
 
@@ -51,6 +52,7 @@ brew 'maven'
 brew 'ant'
 brew 'sbt'
 brew 'gradle'
+brew 'jx'
 
 brew 'ruby'
 brew 'python'
