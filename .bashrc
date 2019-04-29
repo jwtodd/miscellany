@@ -16,6 +16,9 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
+source ~/projects/git-subrepo/.rc
+source <(kubectl completion bash
+
 if [ -f ${HOME}/.cargo/env ]; then
   . ${HOME}/.cargo/env
 fi
