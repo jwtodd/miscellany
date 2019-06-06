@@ -131,3 +131,5 @@ brew 'pidof'
 brew 'homebrew/cask/visual-studio-code'
 
 cask 'keybase'
+
+brew 'mas'
