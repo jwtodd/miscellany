@@ -128,8 +128,8 @@ brew 'iproute2mac'
 brew 'expect'
 brew 'tmux-xpanes'
 brew 'pidof'
-brew 'homebrew/cask/visual-studio-code'
 
 cask 'keybase'
+cask 'visual-studio-code'
 
 brew 'mas'
