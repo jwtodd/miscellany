@@ -36,6 +36,7 @@ brew 'markdown'
 cask 'google-chrome'
 cask 'brave'
 cask 'tor-browser'
+cask 'insomnia'
 
 brew 'awscli'
 cask 'google-cloud-sdk'
