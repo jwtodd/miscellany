@@ -39,6 +39,7 @@ cask 'tor-browser'
 cask 'insomnia'
 
 brew 'awscli'
+brew 'awslogs'
 cask 'google-cloud-sdk'
 brew 'rpm'
 brew 'git'
