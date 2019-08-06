@@ -8,21 +8,22 @@ export MANPATH=/usr/local/opt/inetutils/libexec/gnuman:${MANPATH}
 
 export FLAGS_GETOPT_CMD="$(brew --prefix gnu-getopt)/bin/getopt"
 
+for f in \
+  $(brew --prefix)/etc/bash_completion \
+  $(brew --prefix nvm)/nvm.sh \
+  ~/projects/git-subrepo/.rc \
+  ${HOME}/.cargo/env; do
+  if [ -f ${f} ]; then
+    . ${f}
+  fi
+done
+
+source <(kubectl completion bash
+
 for f in $(ls /Applications/Docker.app/Contents/Resources/etc/*\.bash-completion); do
   (cd $(brew --prefix)/etc/bash_completion.d; \
     ln -sf ${f})
 done
-
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
-fi
-
-source ~/projects/git-subrepo/.rc
-source <(kubectl completion bash
-
-if [ -f ${HOME}/.cargo/env ]; then
-  . ${HOME}/.cargo/env
-fi
 
 portpid() {
   lsof -n -iTCP:${1} | grep LISTEN
