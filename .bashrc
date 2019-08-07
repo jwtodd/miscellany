@@ -10,6 +10,7 @@ export FLAGS_GETOPT_CMD="$(brew --prefix gnu-getopt)/bin/getopt"
 
 for f in \
   $(brew --prefix)/etc/bash_completion \
+  /usr/local/etc/profile.d/bash_completion.sh \
   $(brew --prefix nvm)/nvm.sh \
   ~/projects/git-subrepo/.rc \
   ${HOME}/.cargo/env; do
