@@ -21,7 +21,19 @@ for f in \
   fi
 done
 
-source <(kubectl completion bash
+source <(kubectl completion bash)
+
+for f in \
+  ${DOCKER_HOME}/etc/docker-compose.bash-completion \
+  ${DOCKER_HOME}/etc/docker-machine.bash-completion \
+  ${DOCKER_HOME}/etc/docker.bash-completion; do
+  if [ -f ${f} ]; then
+    fn=$(basename $f)
+    ft=$(brew --prefix)/etc/bash_completion.d/${fn%.*}
+    [ -f ${ft} ] && rm -rf ${ft}
+    ln -s ${f} ${ft}
+  fi
+done
 
 for f in $(ls ${DOCKER_HOME}/etc/*\.bash-completion); do
   (cd $(brew --prefix)/etc/bash_completion.d; \
