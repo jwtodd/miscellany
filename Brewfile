@@ -7,11 +7,13 @@ tap 'caskroom/versions'
 tap 'brew tap jenkins-x/jx'
 tap 'AdoptOpenJDK/openjdk'
 tap 'boz/repo'
+tap apjanke/ronn-ng
 
 brew 'bash'
 brew 'bash-completion'
 brew 'tree'
 brew 'grep'
+brew 'ronn-ng'
 
 brew 'autoconf'
 brew 'automake'
