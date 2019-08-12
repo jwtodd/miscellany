@@ -10,7 +10,7 @@ export MANPATH=/usr/local/opt/inetutils/libexec/gnuman:${MANPATH}
 
 export FLAGS_GETOPT_CMD="$(brew --prefix gnu-getopt)/bin/getopt"
 
-[ -s "${NVM_DIR}/nvm.sh" ] && . "${NVM_DIR}/nvm.sh"
+[ -s "${NVM_DIR}/nvm.sh" ] && (chmod 755 ${NVM_DIR}/nvm.sh; . "${NVM_DIR}/nvm.sh")
 
 for f in \
   $(brew --prefix)/etc/bash_completion \
