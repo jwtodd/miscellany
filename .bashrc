@@ -3,11 +3,14 @@ export DOCKER_HOME=/Applications/Docker.app/Contents/Resources
 export HISTCONTROL=ignorespaceS
 export GO_HOME=~/go
 export ISTIO_HOME=~/projects/istio-1.2.2
+export NVM_DIR=/usr/local/opt/nvm
 
 export PATH=~/bin:${JAVA_HOME}/bin:${DOCKER_HOME}/bin:${GO_HOME}/bin:${ISTIO_HOME}/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/inetutils/libexec/gnubin:/usr/local/sbin:/usr/bin:~/sbt/bin:${PATH}
 export MANPATH=/usr/local/opt/inetutils/libexec/gnuman:${MANPATH}
 
 export FLAGS_GETOPT_CMD="$(brew --prefix gnu-getopt)/bin/getopt"
+
+[ -s "${NVM_DIR}/nvm.sh" ] && . "${NVM_DIR}/nvm.sh"
 
 for f in \
   $(brew --prefix)/etc/bash_completion \
@@ -15,7 +18,8 @@ for f in \
   ${ISTIO_HOME}/tools/istioctl.bash \
   $(brew --prefix nvm)/nvm.sh \
   ~/projects/git-subrepo/.rc \
-  ${HOME}/.cargo/env; do
+  ${HOME}/.cargo/env \
+  ${NVM_DIR}/etc/bash_completion; do
   if [ -f ${f} ]; then
     . ${f}
   fi
