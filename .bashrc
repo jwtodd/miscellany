@@ -21,7 +21,9 @@ for f in \
   fi
 done
 
-source <(kubectl completion bash)
+for t in kubectl helm; do
+  source <(${t} completion bash)
+done
 
 for f in \
   ${DOCKER_HOME}/etc/docker-compose.bash-completion \
