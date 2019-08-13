@@ -25,7 +25,7 @@ for f in \
   fi
 done
 
-for t in kubectl helm; do
+for t in kubectl helm eksctl; do
   source <(${t} completion bash)
 done
 
