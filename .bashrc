@@ -10,13 +10,10 @@ export MANPATH=/usr/local/opt/inetutils/libexec/gnuman:${MANPATH}
 
 export FLAGS_GETOPT_CMD="$(brew --prefix gnu-getopt)/bin/getopt"
 
-[ -s "${NVM_DIR}/nvm.sh" ] && (chmod 755 ${NVM_DIR}/nvm.sh; . "${NVM_DIR}/nvm.sh")
-
 for f in \
   $(brew --prefix)/etc/bash_completion \
   /usr/local/etc/profile.d/bash_completion.sh \
   ${ISTIO_HOME}/tools/istioctl.bash \
-  $(brew --prefix nvm)/nvm.sh \
   ~/projects/git-subrepo/.rc \
   ${HOME}/.cargo/env \
   ${NVM_DIR}/etc/bash_completion; do
@@ -57,3 +54,5 @@ pidcwd() {
 alias drc='docker rm $(docker ps -a -q)'
 alias dri='docker rmi $(docker images -a -q)'
 alias drv='docker volume prune -f'
+
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
