@@ -38,6 +38,7 @@ brew 'wget'
 brew 'markdown'
 
 cask 'google-chrome'
+cask 'google-drive-file-stream'
 cask 'brave-browser'
 cask 'tor-browser'
 cask 'insomnia'
