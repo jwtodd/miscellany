@@ -2,7 +2,7 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-11.0.2.jdk/Conte
 export DOCKER_HOME=/Applications/Docker.app/Contents/Resources
 export HISTCONTROL=ignorespaceS
 export GO_HOME=~/go
-export ISTIO_HOME=~/projects/istio-1.2.2
+export ISTIO_HOME=~/projects/istio-1.2.4
 export NVM_DIR=/usr/local/opt/nvm
 
 export PATH=~/bin:${JAVA_HOME}/bin:${DOCKER_HOME}/bin:${GO_HOME}/bin:${ISTIO_HOME}/bin:${NVM_DIR}:${HOME}/.cargo/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/inetutils/libexec/gnubin:/usr/local/sbin:/usr/local/opt/gnu-getopt/bin:/usr/bin:~/sbt/bin:${PATH}
