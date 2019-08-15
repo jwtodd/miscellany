@@ -144,7 +144,6 @@ brew 'expect'
 brew 'tmux-xpanes'
 brew 'pidof'
 
-cask 'keybase'
 cask 'visual-studio-code'
 
 brew 'mas'
