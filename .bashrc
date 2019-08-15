@@ -3,9 +3,10 @@ export DOCKER_HOME=/Applications/Docker.app/Contents/Resources
 export HISTCONTROL=ignorespaceS
 export GO_HOME=~/go
 export ISTIO_HOME=~/projects/istio-1.2.4
-export NVM_DIR=/usr/local/opt/nvm
+export NVM_DIR=${HOME}/.nvm
+export YARN_DIR=${HOME}/.yarn
 
-export PATH=~/bin:${JAVA_HOME}/bin:${DOCKER_HOME}/bin:${GO_HOME}/bin:${ISTIO_HOME}/bin:${NVM_DIR}:${HOME}/.cargo/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/inetutils/libexec/gnubin:/usr/local/sbin:/usr/local/opt/gnu-getopt/bin:/usr/bin:~/sbt/bin:${PATH}
+export PATH=~/bin:${JAVA_HOME}/bin:${DOCKER_HOME}/bin:${GO_HOME}/bin:${ISTIO_HOME}/bin:${NVM_DIR}:${HOME}/.cargo/bin:${YARN_DIR}/bin:${HOME}/.config/yarn/global/node_modules/.bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/inetutils/libexec/gnubin:/usr/local/sbin:/usr/local/opt/gnu-getopt/bin:/usr/bin:~/sbt/bin:${PATH}
 export MANPATH=/usr/local/opt/inetutils/libexec/gnuman:${MANPATH}
 
 export FLAGS_GETOPT_CMD="$(brew --prefix gnu-getopt)/bin/getopt"
