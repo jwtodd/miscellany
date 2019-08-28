@@ -52,6 +52,7 @@ brew 'git'
 brew 'hub'
 brew 'git-flow-avh'
 brew 'git-subrepo'
+brew 'pre-commit'
 brew 'subversion'
 brew 'mercurial'
 
