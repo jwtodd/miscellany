@@ -11,7 +11,7 @@ tap 'apjanke/ronn-ag'
 tap 'weaveworks/tap'
 
 brew 'bash'
-brew 'bash-completion@2'
+brew 'bash-completion'
 brew 'tree'
 brew 'grep'
 brew 'ronn-ng'
