@@ -42,6 +42,7 @@ cask 'google-drive-file-stream'
 cask 'brave-browser'
 cask 'tor-browser'
 cask 'insomnia'
+cask '1password'
 
 brew 'awscli'
 brew 'aws-iam-authenticator'
