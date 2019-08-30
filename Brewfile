@@ -15,6 +15,7 @@ brew 'bash-completion'
 brew 'tree'
 brew 'grep'
 brew 'ronn-ng'
+brew 'certbot'
 
 brew 'autoconf'
 brew 'automake'
