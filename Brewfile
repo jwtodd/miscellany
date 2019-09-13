@@ -61,6 +61,8 @@ brew 'mercurial'
 cask 'sourcetree'
 
 brew 'maven'
+brew 'yarn'
+brew 'nvm'
 brew 'ant'
 brew 'sbt'
 brew 'gradle'
