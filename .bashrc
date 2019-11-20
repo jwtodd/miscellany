@@ -35,7 +35,7 @@ for f in \
   fi
 done
 
-for t in kubectl helm eksctl; do
+for t in kubectl helm eksctl ko; do
   source <(${t} completion bash)
 done
 
