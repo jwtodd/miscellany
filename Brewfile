@@ -94,6 +94,7 @@ brew 'txn2/tap/kubefwd'
 brew 'weaveworks/tap/eksctl'
 brew 'kubernetes-helm'
 cask 'minikube'
+brew install derailed/k9s/k9s
 brew 'boz/repo/kail'
 brew 'cassandra'
 brew 'hadoop'
