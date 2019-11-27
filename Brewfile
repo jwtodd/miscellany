@@ -123,8 +123,6 @@ brew 'ansible'
 brew 'nmap'
 brew 'graphviz'
 brew 'neo4j'
-cask 'vagrant'
-cask 'vagrant-manager'
 cask 'slack'
 cask 'skype'
 cask 'limechat'
@@ -135,12 +133,10 @@ brew 'watch'
 cask 'coolterm'
 cask 'tunnelblick'
 cask 'tftpserver'
-cask 'xquartz'
 
-brew 'gnu-sed', args: ['with-default-names']
-brew 'unzip', args: ['with-default-names']
+brew 'gnu-sed' #, args: ['with-default-names']
+brew 'unzip' #, args: ['with-default-names']
 
-cask 'ticktick'
 cask 'the-unarchiver'
 cask 'etcher'
 
