@@ -3,13 +3,25 @@ export DOCKER_HOME=/Applications/Docker.app/Contents/Resources
 export HISTCONTROL=ignorespaceS
 export GO_HOME=~/go
 export ISTIO_HOME=~/projects/istio-1.2.4
+#export YARN_DIR=${HOME}/.yarn
 export NVM_DIR=${HOME}/.nvm
-export YARN_DIR=${HOME}/.yarn
+NVM_HOMEBREW=/usr/local/opt/nvm/nvm.sh
 
-export PATH=~/bin:${JAVA_HOME}/bin:${DOCKER_HOME}/bin:${GO_HOME}/bin:${ISTIO_HOME}/bin:${NVM_DIR}:${HOME}/.cargo/bin:${YARN_DIR}/bin:${HOME}/.config/yarn/global/node_modules/.bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/inetutils/libexec/gnubin:/usr/local/sbin:/usr/local/opt/gnu-getopt/bin:/usr/bin:~/sbt/bin:${PATH}
+#export PATH=~/bin:${JAVA_HOME}/bin:${DOCKER_HOME}/bin:${GO_HOME}/bin:${ISTIO_HOME}/bin:${NVM_DIR}:${HOME}/.cargo/bin:${YARN_DIR}/bin:${HOME}/.config/yarn/global/node_modules/.bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/inetutils/libexec/gnubin:/usr/local/sbin:/usr/local/opt/gnu-getopt/bin:/usr/bin:~/sbt/bin:${PATH}
+export PATH=~/bin:${JAVA_HOME}/bin:${DOCKER_HOME}/bin:${GO_HOME}/bin:${ISTIO_HOME}/bin:${NVM_DIR}:${HOME}/.cargo/bin:${HOME}/.config/yarn/global/node_modules/.bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/inetutils/libexec/gnubin:/usr/local/sbin:/usr/local/opt/gnu-getopt/bin:/usr/bin:~/sbt/bin:${PATH}
 export MANPATH=/usr/local/opt/inetutils/libexec/gnuman:${MANPATH}
 
 export FLAGS_GETOPT_CMD="$(brew --prefix gnu-getopt)/bin/getopt"
+
+[ ! -d ~/.nvm ] && mkdir ~/.nvm
+nvm install node
+nvm install --lts
+nvm use node
+nvm run node --version
+nvm install 8.10.0
+nvm alias default 8.10.0
+
+[ -s "${NVM_HOMEBREW}" ] && . "${NVM_HOMEBREW}"
 
 for f in \
   $(brew --prefix)/etc/bash_completion \
@@ -23,7 +35,7 @@ for f in \
   fi
 done
 
-for t in kubectl helm eksctl; do
+for t in kubectl helm eksctl ko; do
   source <(${t} completion bash)
 done
 
