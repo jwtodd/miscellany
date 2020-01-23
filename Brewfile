@@ -115,7 +115,7 @@ brew 'derailed/popeye/popeye'
 brew 'kubectx'
 brew 'kube-ps1'
 brew 'stern'
-tap farmotive/k8s
+#tap farmotive/k8s
 brew 'kpoof'
 brew 'boz/repo/kail'
 brew 'cassandra'
