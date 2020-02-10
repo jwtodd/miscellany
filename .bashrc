@@ -66,6 +66,7 @@ pidcwd() {
 
 alias drc='docker rm $(docker ps -a -q)'
 alias dri='docker rmi $(docker images -a -q)'
+alias drdi='docker rmi $(docker images -f "dangling=true" -q)'
 alias drv='docker volume prune -f'
 
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
