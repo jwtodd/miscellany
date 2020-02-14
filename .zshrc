@@ -3,7 +3,9 @@
 export GO_HOME=${HOME}/go
 export GOPATH=${HOME}/projects/go
 export NVM_DIR=${HOME}/.nvm
+export YARN_DIR=${HOME}/.yarn
 export YARN=${HOME}/.yarn
+export NODE=${NVM_DIR}/versions/node/v12.14.1
 export KREW_ROOT=${HOME}/.krew
 export AWS_PROFILE=lacuna
 export AWS_DEFAULT_REGION=us-west-2
@@ -11,7 +13,7 @@ export AWS_DEFAULT_REGION=us-west-2
 
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-export PATH=~/bin:${GO_HOME}/bin:${KREW_ROOT}/bin:${HOME}/.cargo/bin:${NVM_DIR}:${YARN_DIR}/bin:${HOME}/.config/yarn/global/node_modules/.bin:$(brew --prefix)/bin:$(brew --prefix)/sbin:/usr/local/opt/inetutils/libexec/gnubin:/usr/local/sbin:/usr/bin:${PATH}
+export PATH=.:~/bin:${GO_HOME}/bin:${GOPATH}/bin:${KREW_ROOT}/bin:${HOME}/.cargo/bin:${NVM_DIR}:${YARN_DIR}/bin:${HOME}/.config/yarn/global/node_modules/.bin:${NODE}/bin:$(brew --prefix)/bin:$(brew --prefix)/sbin:/usr/local/opt/inetutils/libexec/gnubin:/usr/local/sbin:/usr/bin:${PATH}
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/jwtodd/.oh-my-zsh"
