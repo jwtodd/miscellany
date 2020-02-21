@@ -11,8 +11,10 @@ brew 'bash'
 brew 'zsh'
 brew 'bash-completion'
 brew 'tree'
+brew 'pstree'
 brew 'grep'
 brew 'certbot'
+brew 'plantuml'
 
 brew 'coreutils'
 brew 'findutils'
@@ -51,6 +53,7 @@ brew 'libjwt'
 cask 'keybase'
 
 brew 'wget'
+brew 'httpie'
 brew 'markdown'
 
 cask 'google-chrome'
