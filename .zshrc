@@ -172,3 +172,24 @@ alias iroutes='curl --silent http://localhost:15000/config_dump | jq '\''.config
 alias igl='kubectl -n istio-system logs $(kubectl -n istio-system get pods -listio=ingressgateway -o=jsonpath="{.items[0].metadata.name}") --tail=300'
 alias ipl='kubectl -n istio-system logs $(kubectl -n istio-system get pods -listio=pilot -o=jsonpath="{.items[0].metadata.name}") discovery --tail=300'
 alias -s log="tail -f"
+
+# git-diff-so-fancy [ https://github.com/so-fancy/diff-so-fancy ]
+git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
+git config --global color.ui true
+git config --global color.diff-highlight.oldNormal    "red bold"
+git config --global color.diff-highlight.oldHighlight "red bold 52"
+git config --global color.diff-highlight.newNormal    "green bold"
+git config --global color.diff-highlight.newHighlight "green bold 22"
+git config --global color.diff.meta       "11"
+git config --global color.diff.frag       "magenta bold"
+git config --global color.diff.commit     "yellow bold"
+git config --global color.diff.old        "red bold"
+git config --global color.diff.new        "green bold"
+git config --global color.diff.whitespace "red reverse"
+git config --bool --global diff-so-fancy.markEmptyLines false
+git config --bool --global diff-so-fancy.changeHunkIndicators false
+git config --bool --global diff-so-fancy.stripLeadingSymbols false
+git config --bool --global diff-so-fancy.useUnicodeRuler false
+git config --global diff-so-fancy.rulerWidth 47    # git log's commit header width
+
+
