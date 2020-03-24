@@ -192,4 +192,8 @@ git config --bool --global diff-so-fancy.stripLeadingSymbols false
 git config --bool --global diff-so-fancy.useUnicodeRuler false
 git config --global diff-so-fancy.rulerWidth 47    # git log's commit header width
 
-
+jdk() {
+  version=$1
+  export JAVA_HOME=$(/usr/libexec/java_home -v"$version");
+  java -version
+}
