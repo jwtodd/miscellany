@@ -16,6 +16,7 @@ brew 'pstree'
 brew 'grep'
 brew 'certbot'
 brew 'plantuml'
+brew 'minio-mc'
 
 brew 'coreutils'
 brew 'findutils'
