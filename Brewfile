@@ -1,5 +1,4 @@
 tap 'homebrew/bundle'
-tap 'homebrew/version'
 tap 'homebrew/cask'
 tap 'homebrew/cask-drivers'
 tap 'homebrew/cask-fonts'
