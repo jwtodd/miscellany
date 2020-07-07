@@ -97,8 +97,6 @@ brew 'rust'
 brew 'groovy'
 brew 'jvmtop'
 
-cask 'java8'
-cask 'java'
 cask 'adoptopenjdk'
 cask 'adoptopenjdk8'
 cask 'adoptopenjdk10'
