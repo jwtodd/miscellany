@@ -52,6 +52,9 @@ brew 'gpg'
 
 brew 'libjwt'
 
+brew tap mike-engel/jwt-cli
+brew install jwt-cli
+
 cask 'keybase'
 
 brew 'wget'
