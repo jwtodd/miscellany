@@ -172,6 +172,11 @@ alias iroutes='curl --silent http://localhost:15000/config_dump | jq '\''.config
 alias igl='kubectl -n istio-system logs $(kubectl -n istio-system get pods -listio=ingressgateway -o=jsonpath="{.items[0].metadata.name}") --tail=300'
 alias ipl='kubectl -n istio-system logs $(kubectl -n istio-system get pods -listio=pilot -o=jsonpath="{.items[0].metadata.name}") discovery --tail=300'
 alias -s log="tail -f"
+alias python=python3.8
+alias pip=pip3
+#alias cat='bat -pp --theme="Nord"'
+alias cat='bat -pp --theme="Dracula"'
+alias awsl='AWS_ACCESS_KEY_ID=test AWS_SECRET_ACCESS_KEY=test aws --region us-west-2 --endpoint-url=http://localhost:4566'
 
 # git-diff-so-fancy [ https://github.com/so-fancy/diff-so-fancy ]
 git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
