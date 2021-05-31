@@ -18,6 +18,8 @@ brew 'grep'
 brew 'certbot'
 brew 'plantuml'
 brew 'minio-mc'
+brew 'lsd'
+brew install --cask iterm2
 
 brew 'coreutils'
 brew 'findutils'
