@@ -19,7 +19,7 @@ brew 'certbot'
 brew 'plantuml'
 brew 'minio-mc'
 brew 'lsd'
-brew install --cask iterm2
+brew 'fd'
 
 brew 'coreutils'
 brew 'findutils'
@@ -69,6 +69,7 @@ cask 'brave-browser'
 cask 'tor-browser'
 cask 'insomnia'
 cask '1password'
+brew 'iterm2'
 
 brew 'awscli'
 brew 'aws-iam-authenticator'
