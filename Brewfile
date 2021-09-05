@@ -68,7 +68,6 @@ cask 'google-chrome'
 cask 'brave-browser'
 cask 'tor-browser'
 cask 'insomnia'
-cask '1password'
 brew 'iterm2'
 
 brew 'awscli'
