@@ -20,6 +20,8 @@ brew 'plantuml'
 brew 'minio-mc'
 brew 'lsd'
 brew 'fd'
+brew 'pgcli'
+brew 'iredis'
 
 brew 'coreutils'
 brew 'findutils'
